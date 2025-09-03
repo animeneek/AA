@@ -3,104 +3,94 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>AA – AI-Assisted Health</title>
+  <title>AA – AI Health</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css" rel="stylesheet" />
 </head>
-<body class="bg-gradient-to-br from-white via-blue-50 to-blue-100 min-h-screen text-gray-800 font-sans">
+<body class="bg-gradient-to-tr from-[#f0f4ff] via-white to-[#eaf4ff] min-h-screen font-sans text-gray-800">
 
   <!-- Header -->
-  <header class="sticky top-0 z-50 bg-white/80 backdrop-blur shadow-md">
+  <header class="fixed top-0 left-0 w-full z-50 bg-white/60 backdrop-blur-lg shadow-sm">
     <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
       <h1 class="text-2xl font-bold text-blue-700 tracking-tight">AA Health</h1>
-      <nav class="space-x-6 text-sm font-medium">
-        <a href="login.html" class="text-gray-700 hover:text-blue-600 transition">Log In</a>
-        <a href="register.html" class="bg-blue-600 text-white px-5 py-2 rounded-lg shadow hover:bg-blue-700 transition-all">Sign Up</a>
+      <nav class="space-x-4">
+        <a href="login.html" class="text-sm text-gray-600 hover:text-blue-600">Log In</a>
+        <a href="register.html" class="inline-block bg-blue-600 text-white text-sm px-5 py-2 rounded-full shadow hover:bg-blue-700 transition">Sign Up</a>
       </nav>
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="relative py-24 md:py-32">
-    <div class="max-w-7xl mx-auto px-6 flex flex-col-reverse md:flex-row items-center gap-16">
-      
-      <!-- Left Text Block -->
-      <div class="md:w-1/2 text-center md:text-left">
-        <h2 class="text-5xl font-extrabold leading-tight text-blue-800 mb-6">
-          Smarter Healthcare,<br />
-          Powered by AI.
-        </h2>
-        <p class="text-lg text-gray-600 mb-8 max-w-md mx-auto md:mx-0">
-          Instantly connect with licensed doctors, backed by intelligent AI to support you in every step of your health journey.
-        </p>
-        <div class="flex flex-col sm:flex-row items-center sm:items-start gap-4 sm:gap-6">
-          <a href="register.html" class="bg-blue-700 text-white px-6 py-3 rounded-full text-lg font-semibold shadow-lg hover:bg-blue-800 transition">
-            Get Started
-          </a>
-          <a href="login.html" class="text-blue-700 font-semibold hover:underline text-base">
-            Already a member?
-          </a>
-        </div>
+  <!-- Hero -->
+  <section class="relative pt-40 pb-24 px-6 text-center overflow-hidden">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-5xl md:text-6xl font-extrabold text-blue-800 leading-tight mb-6">
+        Healthcare.<br class="hidden sm:inline" />
+        Backed by AI.
+      </h2>
+      <p class="text-lg md:text-xl text-gray-600 mb-10 max-w-xl mx-auto">
+        Instant access to medical expertise, powered by cutting-edge AI and real doctors. Wherever you are.
+      </p>
+      <a href="register.html" class="inline-block bg-blue-700 text-white text-lg px-8 py-3 rounded-full shadow-xl hover:bg-blue-800 transition">
+        Get Started
+      </a>
+    </div>
+
+    <!-- Decorative Blobs -->
+    <div class="absolute top-[-100px] left-[-100px] w-[300px] h-[300px] bg-blue-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse"></div>
+    <div class="absolute bottom-[-100px] right-[-100px] w-[300px] h-[300px] bg-purple-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse"></div>
+  </section>
+
+  <!-- Features -->
+  <section class="bg-white py-24 px-6">
+    <div class="max-w-6xl mx-auto text-center mb-16">
+      <h3 class="text-4xl font-bold text-blue-800 mb-4">Why Choose AA?</h3>
+      <p class="text-gray-600 text-lg max-w-2xl mx-auto">
+        We blend human care and AI speed to make healthcare more responsive, reliable, and reachable.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto">
+      <!-- Feature 1 -->
+      <div class="bg-gradient-to-br from-blue-50 to-white p-8 rounded-2xl shadow hover:shadow-md transition">
+        <div class="text-5xl mb-4">⚡</div>
+        <h4 class="text-xl font-semibold text-blue-700 mb-2">Fast AI Diagnosis</h4>
+        <p class="text-gray-600">Get instant symptom analysis powered by advanced AI.</p>
       </div>
 
-      <!-- Right Image -->
-      <div class="md:w-1/2">
-        <img src="https://cdn.pixabay.com/photo/2017/03/06/22/01/doctor-2127700_960_720.png" alt="Doctor illustration" class="w-full max-w-md mx-auto rounded-xl shadow-xl hover:scale-105 transition-transform duration-500">
+      <!-- Feature 2 -->
+      <div class="bg-gradient-to-br from-blue-50 to-white p-8 rounded-2xl shadow hover:shadow-md transition">
+        <div class="text-5xl mb-4">🩺</div>
+        <h4 class="text-xl font-semibold text-blue-700 mb-2">Real Doctors</h4>
+        <p class="text-gray-600">Talk directly to licensed doctors for expert advice.</p>
+      </div>
+
+      <!-- Feature 3 -->
+      <div class="bg-gradient-to-br from-blue-50 to-white p-8 rounded-2xl shadow hover:shadow-md transition">
+        <div class="text-5xl mb-4">🌍</div>
+        <h4 class="text-xl font-semibold text-blue-700 mb-2">24/7 Global Access</h4>
+        <p class="text-gray-600">Reach us anytime, anywhere – no appointments needed.</p>
       </div>
     </div>
   </section>
 
-  <!-- Features Section -->
-  <section class="py-24 bg-white">
-    <div class="max-w-6xl mx-auto px-6">
-      <div class="text-center mb-16">
-        <h3 class="text-4xl font-bold text-blue-800 mb-4">Why Choose AA?</h3>
-        <p class="text-gray-600 text-lg max-w-xl mx-auto">We're combining the power of human doctors with AI to provide faster, smarter care anytime, anywhere.</p>
-      </div>
-
-      <div class="grid md:grid-cols-3 gap-10 text-center">
-        <!-- Feature 1 -->
-        <div class="bg-gradient-to-br from-blue-100 to-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-all duration-300">
-          <div class="text-5xl mb-4">🤖</div>
-          <h4 class="text-xl font-semibold text-blue-700 mb-2">AI-Powered Insights</h4>
-          <p class="text-gray-600">Screen your symptoms instantly with the help of trained AI models.</p>
-        </div>
-
-        <!-- Feature 2 -->
-        <div class="bg-gradient-to-br from-blue-100 to-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-all duration-300">
-          <div class="text-5xl mb-4">💬</div>
-          <h4 class="text-xl font-semibold text-blue-700 mb-2">Live Doctor Chat</h4>
-          <p class="text-gray-600">Secure real-time chats with licensed healthcare professionals 24/7.</p>
-        </div>
-
-        <!-- Feature 3 -->
-        <div class="bg-gradient-to-br from-blue-100 to-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-all duration-300">
-          <div class="text-5xl mb-4">🌐</div>
-          <h4 class="text-xl font-semibold text-blue-700 mb-2">Global Availability</h4>
-          <p class="text-gray-600">Use AA from anywhere in the world — mobile, tablet, or desktop.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Call to Action -->
-  <section class="py-20 bg-blue-700 text-white text-center">
-    <div class="max-w-3xl mx-auto px-6">
-      <h4 class="text-3xl font-bold mb-4">Ready to take control of your health?</h4>
-      <p class="mb-8 text-lg">Sign up now and get instant access to smart, AI-assisted healthcare — for free.</p>
-      <a href="register.html" class="bg-white text-blue-700 px-8 py-3 rounded-full font-semibold text-lg hover:bg-gray-100 transition">
-        Join Now
+  <!-- Final CTA -->
+  <section class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white text-center py-20 px-6">
+    <div class="max-w-3xl mx-auto">
+      <h4 class="text-3xl md:text-4xl font-bold mb-4">Join thousands taking control of their health.</h4>
+      <p class="mb-8 text-lg">It's free to start. No credit card needed.</p>
+      <a href="register.html" class="bg-white text-blue-700 font-semibold px-8 py-3 rounded-full shadow-lg hover:bg-gray-100 transition">
+        Create Your Account
       </a>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-gray-100 text-gray-600 py-10 text-sm">
-    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
-      <div>&copy; 2025 AA – AI-Assisted Health. All rights reserved.</div>
+  <footer class="bg-white text-gray-500 text-sm py-8">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
+      <div>&copy; 2025 AA Health. All rights reserved.</div>
       <div class="space-x-4">
-        <a href="#" class="hover:text-blue-700">Privacy</a>
-        <a href="#" class="hover:text-blue-700">Terms</a>
-        <a href="#" class="hover:text-blue-700">Contact</a>
+        <a href="#" class="hover:text-blue-600">Privacy</a>
+        <a href="#" class="hover:text-blue-600">Terms</a>
+        <a href="#" class="hover:text-blue-600">Support</a>
       </div>
     </div>
   </footer>
