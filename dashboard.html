@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard – AA</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col">
+
+  <!-- Header -->
+  <header class="bg-white shadow p-4 flex justify-between items-center">
+    <h1 class="text-xl font-bold text-blue-600">AA Dashboard</h1>
+    <a href="index.html" class="text-sm text-gray-600 hover:text-blue-600">Logout</a>
+  </header>
+
+  <!-- Main Chat Container -->
+  <main class="flex-grow flex flex-col max-w-3xl mx-auto w-full p-4">
+    <!-- Chat Box -->
+    <div class="flex-1 overflow-y-auto space-y-4 mb-4">
+      
+      <!-- Assistant message -->
+      <div class="bg-white rounded shadow p-4 max-w-md">
+        <p class="text-sm text-gray-600"><strong>AA Assistant:</strong></p>
+        <p class="text-gray-800">Hi there! I'm your AI health assistant. Please describe your symptoms, and I’ll do my best to help.</p>
+      </div>
+
+      <!-- User message -->
+      <div class="flex justify-end">
+        <div class="bg-blue-600 text-white rounded shadow p-4 max-w-md">
+          <p class="text-sm">I’ve had a sore throat and mild fever since yesterday.</p>
+        </div>
+      </div>
+
+      <!-- Assistant response -->
+      <div class="bg-white rounded shadow p-4 max-w-md">
+        <p class="text-sm text-gray-600"><strong>AA Assistant:</strong></p>
+        <p class="text-gray-800">It might be a common viral infection, but it’s best to consult a licensed doctor for a proper diagnosis.</p>
+      </div>
+
+    </div>
+
+    <!-- Chat Input (Static for Demo) -->
+    <div class="bg-white p-4 rounded shadow flex items-center space-x-2">
+      <input type="text" disabled placeholder="Type your message..." class="flex-grow px-4 py-2 border rounded text-gray-500 bg-gray-100 cursor-not-allowed" />
+      <button class="bg-blue-600 text-white px-4 py-2 rounded cursor-not-allowed" disabled>Send</button>
+    </div>
+
+    <!-- Talk to Doctor Button -->
+    <div class="mt-6 text-center">
+      <a href="doctors.html" class="bg-green-600 text-white px-6 py-3 rounded hover:bg-green-700">Talk to a Doctor</a>
+    </div>
+  </main>
+
+</body>
+</html>
